@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Hello Extensions test",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "./assets/icon.png"
+  },
+  "web_accessible_resources":[
+    {
+        "resources":["/assets/*"],
+        "matches":["<all_urls>"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "js": ["scripts/start.js"],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
