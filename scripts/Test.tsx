@@ -1,11 +1,9 @@
 import React, { useEffect } from "react"
 
-console.log(document.getElementsByClassName("main"))
+console.log(chrome.runtime)
 const Test = () => {
   useEffect(() => {
     const test = document.getElementsByTagName("div")
-    console.log(test)
-    console.log(chrome.runtime)
   }, [])
   return <>Hello!</>
 }
