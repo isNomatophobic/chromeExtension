@@ -15,6 +15,9 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.22.15",
+    "@babel/core": "^7.22.15",
+    "@babel/preset-react": "^7.22.15",
     "@ianvs/prettier-plugin-sort-imports": "4.1.0",
     "@types/chrome": "0.0.243",
     "@types/node": "20.5.0",
@@ -26,6 +29,17 @@
   "manifest": {
     "host_permissions": [
       "https://*/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": [
+          "../scripts/testTranspiled.ts",
+          "../scripts/index.ts"
+        ]
+      }
     ]
   }
 }
