@@ -37,7 +37,7 @@
         ],
         "js": [
           "../scripts/testTranspiled.ts",
-          "../scripts/index.ts"
+          "../scripts/index.tsx"
         ]
       }
     ]
