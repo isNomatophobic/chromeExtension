@@ -1,7 +1,17 @@
-import React from "react"
+import React, { useEffect } from "react"
+
+import { ImageBlur } from "./ImageBlur"
 
 console.log(chrome.runtime)
-const Test = () => {
-  return <div>Hello!</div>
+const App = () => {
+  console.log(document.getElementById("main"))
+
+  useEffect(() => {
+    const main = document.getElementById("main")
+  }, [])
+  return <ImageBlur />
 }
-export default Test
+const T = () => {
+  return <div style={{ width: "500px", height: "500px" }} />
+}
+export default App

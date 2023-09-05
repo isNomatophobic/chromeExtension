@@ -36,7 +36,6 @@
           "<all_urls>"
         ],
         "js": [
-          "../scripts/testTranspiled.ts",
           "../scripts/index.tsx"
         ]
       }
