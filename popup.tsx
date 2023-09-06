@@ -1,30 +1,10 @@
-import React, { useState } from "react"
+import React from "react"
 
-function IndexPopup() {
-  const [data, setData] = useState("")
+import "./popup/styles/index.css"
+import "./popup/styles/normalize.css"
 
-  return (
-    <div
-      style={{
-        display: "flex",
-        width: "300px",
-        flexDirection: "column",
-        padding: 16
-      }}>
-      <h2>
-        Welcome to your
-        <a href="https://www.plasmo.com" target="_blank">
-          {" "}
-          Plasmo
-        </a>{" "}
-        Extension!
-      </h2>
-      <input onChange={(e) => setData(e.target.value)} value={data} />
-      <a href="https://docs.plasmo.com" target="_blank">
-        View Docs
-      </a>
-    </div>
-  )
+function Popup() {
+  return <div id="app">SafeZone</div>
 }
 
-export default IndexPopup
+export default Popup

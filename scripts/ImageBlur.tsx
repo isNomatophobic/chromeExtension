@@ -3,7 +3,7 @@ import { useEffect } from "react"
 const images = document.getElementsByTagName("img")
 const observe = () => {
   for (let i = 0; i < images.length; i++) {
-    images[i].style.filter = "blur(20px)"
+    // images[i].style.filter = "blur(20px)"
   }
 }
 
