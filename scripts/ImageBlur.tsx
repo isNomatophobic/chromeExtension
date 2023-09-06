@@ -6,6 +6,7 @@ const observe = () => {
     images[i].style.filter = "blur(20px)"
   }
 }
+
 export const ImageBlur = () => {
   useEffect(() => {
     observe()
